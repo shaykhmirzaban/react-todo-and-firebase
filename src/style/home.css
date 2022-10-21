@@ -1,0 +1,92 @@
+.todo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+  transition: 0.5s;
+  position: relative;
+}
+.topPart {
+  width: 100%;
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.todo .topPart input {
+  width: 400px;
+  height: 40px;
+  padding: 0 1rem;
+  font-size: 1rem;
+  border: none;
+  box-shadow: 0 0 5px 0 #bdb9b9e3;
+  border-radius: 5px;
+}
+.todo .topPart input:focus-visible {
+  outline: rgb(110, 105, 105);
+}
+.todo .topPart button {
+  height: 40px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.todo .topPart button:active,
+button:hover {
+  opacity: 0.7;
+}
+
+.todo .items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.todo .items .subItem {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 0 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+}
+.subItem p {
+  color: #fff;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+
+.subItem .buttons .delete {
+  width: 80px;
+  font-size: 0.9rem;
+  color: #ef4a4a;
+  font-weight: bold;
+}
+.subItem .buttons .update {
+  width: 80px;
+  font-size: 0.9rem;
+  color: #126c13;
+  font-weight: bold;
+}
+
+.back {
+  width: 80px;
+  height: 40px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  position: absolute;
+  bottom: 0;
+  left: 2rem;
+}
